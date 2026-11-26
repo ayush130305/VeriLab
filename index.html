@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VeriLab</title><style>
+:root{--bg:#fbfbfa;--fg:#1c1c1a;--mu:#6b6b66;--ln:#e4e4df;--card:#fff;--ac:#2456c9;--ok:#157a55;--bad:#c0362c;--hi:#e9effc}
+@media(prefers-color-scheme:dark){:root{--bg:#161615;--fg:#ececea;--mu:#9c9c96;--ln:#30302d;--card:#1e1e1c;--ac:#7fa6ff;--ok:#52c497;--bad:#ff8077;--hi:#222c45}}
+:root[data-theme=dark]{--bg:#161615;--fg:#ececea;--mu:#9c9c96;--ln:#30302d;--card:#1e1e1c;--ac:#7fa6ff;--ok:#52c497;--bad:#ff8077;--hi:#222c45}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 system-ui,sans-serif}
+.wrap{display:grid;grid-template-columns:190px minmax(0,1fr);gap:40px;max-width:1020px;margin:auto;padding:28px 20px}
+nav{position:sticky;top:20px;align-self:start}nav a{display:block;color:var(--mu);text-decoration:none;padding:4px 10px;border-left:2px solid transparent}
+nav a.home{padding:0;color:var(--fg);border:0}nav a.on{color:var(--fg);border-color:var(--ac)}h1{font-size:15px;margin:0 0 14px;font-weight:600}
+h2{font-size:26px;margin:0 0 8px;font-weight:600}h3{font-size:15px;margin:30px 0 8px;font-weight:600}
+.say{border-left:2px solid var(--ac);padding-left:14px;color:var(--mu);margin:0 0 20px}.m{color:var(--mu)}
+section{display:none}section.on{display:block}
+.tw,.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--ln);vertical-align:top}th{color:var(--mu);font-weight:500}
+pre{background:var(--card);border:1px solid var(--ln);border-radius:8px;padding:12px;overflow-x:auto;font-size:12.5px;line-height:1.55}code{font-size:13px}
+.sim{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:16px}
+.ctl{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:10px;font-size:13px;color:var(--mu)}.ctl label{display:flex;gap:8px;align-items:center}.ctl b{color:var(--fg);font-weight:500;min-width:36px}
+input,select,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--ln);border-radius:6px;padding:3px 8px}input[type=range]{padding:0;accent-color:var(--ac)}button{cursor:pointer}
+.out{font-size:14px;margin-top:8px}.ok{color:var(--ok)}.bad{color:var(--bad)}
+svg{display:block;font:12px system-ui,sans-serif}svg text{fill:var(--mu)}svg .v{fill:var(--fg)}
+.cells{display:flex;flex-wrap:wrap;gap:4px}.c{border:1px solid var(--ln);border-radius:6px;padding:4px 8px;font-size:13px;min-width:30px;text-align:center}.c.h{background:var(--hi);border-color:var(--ac)}.c small{display:block;color:var(--mu);font-size:11px}
+details{border-bottom:1px solid var(--ln);padding:8px 0}summary{cursor:pointer}details p{margin:6px 0 2px;color:var(--mu)}
+.pn{display:flex;justify-content:space-between;margin-top:36px}
+@media(max-width:700px){.wrap{grid-template-columns:minmax(0,1fr);gap:16px}nav{position:static;display:flex;flex-wrap:wrap}h1{width:100%}nav a{border-left:0;border-bottom:2px solid transparent}}
+.land{max-width:640px;margin:auto;padding:64px 20px}.land h1{font-size:34px;margin:0 0 6px}a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:20px;margin:36px 0}a.card:hover,a.card:focus-visible{border-color:var(--ac)}a.card h2{font-size:18px}footer{font-size:13px;color:var(--mu)}</style></head><body><main class="land"><h1>VeriLab</h1><p class="m">Interactive lessons for digital design, from an FPGA point of view.</p><a class="card" href="protocols/index.html"><h2>Communication protocols</h2><p class="m">UART, SPI, QSPI, I2C, I3C, APB, AHB-Lite, AXI4, AXI4-Lite, AXI4-Stream, CAN, I2S, Ethernet, USB 2.0. Simulators and interview questions.</p></a><footer>Built with AI help as a learning tool. Check exact values against the specification or datasheet.</footer></main></body></html>
